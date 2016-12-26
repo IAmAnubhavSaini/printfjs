@@ -23,4 +23,4 @@ var tests = [
   }
 ];
 
-strike(tests, 'printf.test.js');
+window.matchstrike.strike(tests, 'printf.test.js');
