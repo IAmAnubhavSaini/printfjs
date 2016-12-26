@@ -6,8 +6,8 @@ var sprintf = function (fmt) {
   var output = []
   var currArg = 1
   for(var i = 0; i < fmt.length; i++) {
-  	while(fmt[i] !== '%' && i < fmt.length) {
-  	  output.push(fmt[i])
+    while(fmt[i] !== '%' && i < fmt.length) {
+      output.push(fmt[i])
       i++
     }
     if(i < fmt.length && fmt[i++] === '%') {
@@ -17,8 +17,8 @@ var sprintf = function (fmt) {
         currArg++
         break
       case '%':
-		output.push('%')
-		break
+        output.push('%')
+        break
       }
     }
   }
